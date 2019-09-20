@@ -1,0 +1,16 @@
+
+body{
+	background-image:url(Images/Myself.JPG);
+	
+	}
+#f{
+	font-family:"Myriad Pro";
+	height:10px;
+	width:100%;
+	background-color:#EE5823;
+}
+
+#footer{
+	height:72px;
+	text-align:center;
+}
