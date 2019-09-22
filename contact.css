@@ -1,7 +1,9 @@
 body{
-    background-image:url(Images/Myself.JPG);
+    background-image: url(Images/2ndbg.jpg);
+    background-repeat: no-repeat;
 	margin:0 0;
-	padding:0 0;
+    padding:0 0;
+    background-size: 1500px 800px;
 }
 
 #header{
@@ -81,7 +83,7 @@ body{
 }
 #connect_title{
 	text-align:center;
-	color:black;
+	color:whitesmoke;
 	font-family:"Myriad Pro";
 	font-size:25px;
 	padding-top:18px;
@@ -89,7 +91,7 @@ body{
 
 .text_field{
 	background-repeat:no-repeat;
-	background-image:url(images/text_field.png);
+	
 	width:363px;
 	height:32px;
 	border:none;
@@ -103,7 +105,19 @@ body{
 	text-align:center;
 	padding-top:30px;
 }
-#footer{
-	height:72px;
-	text-align:center;
+#but{
+    text-align:center;
+
+}
+
+#padding-demo{
+	padding-top:250px;
+}
+#footerindex{
+	
+	background-color: rgb(189, 172, 172);
+	position: relative;
+	text-align: center;
+	bottom: 0;
+  
 }

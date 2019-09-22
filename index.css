@@ -89,7 +89,7 @@ body{
 }
 
 #second_main{
-	width:80%;
+	width:90%;
 	margin:0 auto;
 	
 }
@@ -114,8 +114,10 @@ p{
 #my_picture{
 	padding-top:60px;
 	width:35%;
+	height:20%;
 	float:right;
 }
+
 
 #third_main{
 	width:100%;
@@ -124,7 +126,7 @@ p{
 }
 #bearcat{
 	padding-top:30px;
-	width:80%;
+	width:100%;
 	font-family:"Myriad Pro";
 	margin:0 auto;
 	font-size:40px;
@@ -132,14 +134,14 @@ p{
 	
 }
 #video{
-	width:40%;
+	width:30%;
 	float:left;
 	
 }
 #cover{
 	text-align:center;
 	margin:0 auto;
-	width:70%;
+	width:90%;
 	padding-top:30px;
 }
 #brctimg{
@@ -150,7 +152,14 @@ p{
 #copy{
 	padding-top:15px;
 }
-.footer{
+#padding-demo{
+	padding-top:480px;
+}
+#footerindex{
+	
+	background-color: rgb(189, 172, 172);
 	position: relative;
 	text-align: center;
+	bottom: 0;
+  
 }

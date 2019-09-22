@@ -1,16 +1,135 @@
-
 body{
-	background-image:url(Images/Myself.JPG);
+    background-image: url(Images/2ndbg.jpg);
+    background-repeat: no-repeat;
+	margin:0 0;
+    padding:0 0;
+    background-size: 1500px 800px;
+}
+
+#header{
+	background-color:#000;
+	width:100%;
+	height:80px;
 	
-	}
-#f{
+}
+#back {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 5rem;
+    padding: 5rem 0;
+    background: linear-gradient(to bottom, rgba(22, 22, 22, 0.3) 0%, rgba(22, 22, 22, 0.7) 75%, #161616 100%), url("../Images/6.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+   
+  }
+  
+
+#header2{
 	font-family:"Myriad Pro";
 	height:10px;
 	width:100%;
 	background-color:#EE5823;
 }
+#navbar{
+	width:35%;
+	font-size:21px;
+	float:right;
+	margin-top:30px;
+	
+}
+	
+#home{
+	font-family:"Myriad Pro";
+	display:inline;
+	color:#fff;
+	text-decoration:none;
+}
 
-#footer{
-	height:72px;
+#Heading{
+    color: whitesmoke;
+}
+#f{
+    color:white;
+}
+#forensics{
+	font-family:"Myriad Pro";
+	display:inline;
+	color:#EE5823;
+	font-size:21px;
+}
+#forensics:hover{
+	font-family:"Myriad Pro";
+	display:inline;
+	color:#EE5823;
+	font-weight:bold;
+	font-size:21px;
+}
+#home:hover{
+	font-family:"Myriad Pro";
+	display:inline;
+	color:#EE5823;
+	font-weight:bold;
+	font-size:21px;
+}
+#contact{
+	font-family:"Myriad Pro";
+	display:inline;
+    color:#fff;
+	font-size:21px;
+}
+#contact:hover{
+	display:inline;
+	color:#EE5823;
+	font-weight:bold;
+	font-size:21px;
+}
+#heading{
+	color:#EE5823;
+	font-size:45px;
 	text-align:center;
+	padding-top:25px;
+	font-family:"Myriad Pro";
+}
+#connect_title{
+	text-align:center;
+	color:whitesmoke;
+	font-family:"Myriad Pro";
+	font-size:25px;
+	padding-top:18px;
+}
+
+.text_field{
+	background-repeat:no-repeat;
+	
+	width:363px;
+	height:32px;
+	border:none;
+	padding-left:15px;
+}
+#fields{
+	text-align:center;
+	padding-top:45px;
+}
+#submit{
+	text-align:center;
+	padding-top:30px;
+}
+#but{
+    text-align:center;
+
+}
+
+#padding-demo{
+	padding-top:500px;
+}
+#footerindex{
+	
+	background-color: rgb(189, 172, 172);
+	position: relative;
+	text-align: center;
+	bottom: 0;
+  
 }
