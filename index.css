@@ -21,6 +21,13 @@ body{
 	width:80%;
 	
 } */
+#tag{
+	width:35%;
+	font-size:21px;
+	float:left;
+	margin-top:30px;
+	color:whitesmoke
+}
 #header{
 	width:35%;
 	font-size:21px;

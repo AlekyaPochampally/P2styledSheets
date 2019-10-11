@@ -1,48 +1,145 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<link rel="stylesheet" type="text/css" href="forensics.css"/>   
-<title>Contact</title>
-</head>
-<body >
-    <div id="header"> 
-            <div id="navbar">
-                    <div id="elements">
-                            <a href="index.html"><div id="home">HOME</div></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="contact.html"><div id="contact">CONTACT</div></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            <a href="forensics.html"><strong><div id="forensics">CALCULATION</div></strong></a>
-                    </div>
-             </div>
-    </div>
-    
-    <h1 id="Heading">Area Calculation</h1>
-    <article>
-      <section >
 
-      <form  id="f">
-        <table >
-            <tr>
-                <td>Enter the length of the Rectangle</td>
-                <td> <input type="number" name="Length" value="" placeholder="0.0"></td>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="forensics.css" />
+  <!-- Bootstrap required meta tags-->
+    
+  <meta charset="UTF8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+  <link rel="apple-touch-icon" type="image.png" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image.png" sizes="32x32"  href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+  
+    
+    
+  <!--  <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="favicon_io/site.webmanifest"> -->
+  <!-- Link to CSS-->
+    
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+  <title>Contact</title>
+</head>
+
+<body>
+  <div id="header">
+      <a href="index.html"><div id="tag">Alekya Pochampally</div></a>
+    <div id="navbar">
+       
+      <div id="elements">
+        <a href="index.html">
+          <div id="home">HOME</div>
+        </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="contact.html">
+          <div id="contact">CONTACT</div>
+        </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="forensics.html"><strong>
+            <div id="forensics">CALCULATION</div>
+          </strong></a>
+      </div>
+    </div>
+  </div>
+
+  <h1 id="Heading">Area Calculation</h1>
+  <article>
+    <section>
+
+      <form id="f">
+        <table>
+          <tr>
+            <td>Enter the length of the Rectangle</td>
+            <td> <input type="number" id="length" name="Length" value="" placeholder="0.0"></td>
+
           </tr>
           <tr>
-                <td>Enter the Breadth of the Rectangle</td>
-                <td> <input type="number" name="Breadth" value="" placeholder="0.0"></td>
+            <td>Enter the Breadth of the Rectangle</td>
+            <td> <input type="number" id="breadth" name="Breadth" value="" placeholder="0.0"></td>
           </tr>
+
           <tr></tr>
           <tr></tr>
-        <tr>
+          <tr>
             <td></td>
-          <td colspan="2"><input type="submit" ></td>
-        </tr>
+
+            <td colspan="2"> <button type="button" id="button" class="btn btn-primary" onclick="Calculate_Area()">Find
+                Area </button></td>
+
+          </tr>
+          <tr>
+            <td><label for="solution">The area of rectangle is: </label></td>
+            <td>
+              <p id="solution"></p>
+            </td>
+
+          </tr>
+         
+          <tr>
+            <td><label>The number of clicks: </label></td>
+            <td>
+              <p id="click_count"></p>
+            </td>
+
+          </tr>
+          <tr>
+            <td colspan="2"> <button class="btn btn-outline-info" type="button" id="clear"><strong>Clear</strong>
+              </button></td>
+          </tr>
+          <tr>
+            <!-- <td>    <button id="getJokeButton" class="btn btn-success">Get Joke</button></td>
+          <p id="getjoke"></p>-->
+          </tr>
+
         </table>
-      </form> 
+      </form>
     </section>
+
   </article>
+  <div style="color: white" id="demo">
+    <h3 style="color: white">Let AJAX change this text</h3>
+    <button type="button" onclick="loadDoc()">click</button>
+  </div>
+  <script src="AreaCalculator.js"></script>
+  <script src="ajax_info.txt"></script>
+  <!--<script src="fetchjoke.js"></script>-->
+
+  <div id="result"></div>
+  <!--
+<script>
+
+   if(localStorage.getItem('length'))
+     {
+      document.getElementById('length').value=localStorage.getItem('length');
+     }
+     if(localStorage.getItem('breadth'))
+     {
+      document.getElementById('breadth').value=localStorage.getItem('breadth');
+     }
+
+     document.getElementById('button').addEventListener('click',() =>
+     {
+     const count=0||  parseInt(localStorage.getItem('counting'))
+     count=count + 1
+     const q = `this has been read ${count} times`
+     document.getElementById('solution').innerHTML=q;
+     localStorage.setItem('counting',count);
+
+     //printing
+     //docuent.getElementById("click_count").innerHTML=count;
+     })
+
+</script>
+-->
   <div id="padding-demo"></div>
   <footer id="footerindex">
-           Alekya Pochampally
-  </footer> 
-    </body>
-    </html>
+    Alekya Pochampally
+  </footer>
+</body>
+
+</html>
