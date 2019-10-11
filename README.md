@@ -12,8 +12,10 @@
 [background] (https://cf-media.cellebrite.com/wp-content/uploads/2018/08/Blog_Challenges_Featured-1600x800.png)
 [Video] (https://www.youtube.com/watch?v=Gifk5DSLF1A)
 
-###### Help taken from my friends 
+###Help taken from my friends 
 - Maha Lakshmi
 - Jyothsna
 - Prudhvi
+- Bhavya
+- Chinmayi
 
